@@ -5,8 +5,32 @@
 
 (/ 12 (* 3 3))
 
+; Strings
 (string-append "Geovani" " " "Figueiredo")
 
 (string-length "Geovani Figueiredo")
 
-(substring "Geovani Figueiredo" 4 8)
+(substring "Geovani Figueiredo" 0 2)
+
+(require 2htdp/image)
+
+(circle 10 "solid" "red")
+
+(rectangle 30 60 "outline" "blue")
+
+(text "Hellooo" 24 "green")
+
+(above (circle 10 "solid" "red")
+       (circle 20 "solid" "red")
+       (circle 30 "solid" "red"))
+
+(beside (circle 10 "solid" "red")
+       (circle 20 "solid" "red")
+       (circle 30 "solid" "red"))
+
+(overlay (circle 10 "solid" "red")
+       (circle 20 "solid" "yellow")
+       (circle 30 "solid" "blue"))
+
+(overlay (text "PARE" 35 "white")
+         (regular-polygon 40 8 "solid" "red"))

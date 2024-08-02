@@ -34,3 +34,55 @@
 
 (overlay (text "PARE" 35 "white")
          (regular-polygon 40 8 "solid" "red"))
+
+; Functions
+
+(define (sum a b)
+  (+ a b))
+
+(sum 2 2)
+
+; True / False
+; Predicates are primitives or functions that produce
+; a boolean value, so = and string=? are examples of predicates.
+
+(define WIDTH 100)
+(define HEIGHT 100)
+
+(< WIDTH HEIGHT)
+
+(< 1 2)
+(> 1 2)
+(>= 1 1)
+(string=? "foo" "bar")
+
+
+; IF Statement
+
+(if (> 1 2)
+    "Maior!"
+    "Menor ou Igual!")
+
+(if (not (> 1 2))
+    "Inv: Maior!"
+    "Inv: Menor ou Igual!")
+
+(if (and (> 1 2)
+         (< 1 2))
+    "Both True"
+    "A least one False")
+
+(if (or (> 1 2)
+         (< 1 2))
+    "A least one True"
+    "Both False")
+
+
+; Stepper (stepper-starter.rkt)
+; Click on 'Step' button on
+; Top-Right corner and learn haha
+
+
+; Discovering Primitives
+
+

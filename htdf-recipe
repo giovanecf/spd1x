@@ -1,0 +1,31 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname htdf-recipe) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+; Hard Challenge: Design a function that take a number and returns the twices
+; of it's number.
+
+;; 1.1 Signature: real -> real
+;; 1.2 Purpose: produce 2 times the given number
+;; 1.3 Stub:
+;;    Has correct function name, has correct number of parameters, produces dummy result of correct type.
+;;         In BSL: (define (double n) 0) -> this is a stub
+;;         In JS: function double(n) { return 0; } -> this is a stub
+
+;; 2.1 Examples: (check-expect (double 3) 6)
+;;    Aka: Unitary test
+
+;; 3.1 Inventory(template):
+;;    (define (double n)
+;;             (... n))
+;;    But, wait.. What I put at '...'?
+;;    Easy:
+;; 3.2 Constants:
+;;    Create the algorith with 'n' as a constant. So...
+;;    If I say n = 9, I expect 'double' returns 18.
+;;    What do I do to transform 9 in to 18?
+;;    Well, I can multiply 9 by 2. Maybe that's the anwser.
+
+
+;; 4.1 Code Body:
+
+;; 5.1 Test and Debug:
