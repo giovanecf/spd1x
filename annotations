@@ -1,6 +1,3 @@
-;; The first three lines of this file were inserted by DrRacket. They record metadata
-;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname annotations) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 ; This is comment
 
 (/ 12 (* 3 3))
@@ -85,4 +82,12 @@
 
 ; Discovering Primitives
 
+
+; Functions
+
+(define (semaforo t s)
+  (circle t "solid" s))
+
+(overlay (semaforo 20 "pink")
+         (semaforo 30 "black"))
 
